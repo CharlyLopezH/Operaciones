@@ -7,8 +7,6 @@ export const SimpleForm=()=>{
             email:'email@email.com'
         })
 
-        
-
     const onInputChange = ({target}) => {
           console.log(`OnInputChange${'target.name: '+target.name+' '+target.value}`);
           const {name,value} = target;
@@ -66,6 +64,7 @@ export const SimpleForm=()=>{
         </input>
         <hr></hr>
         <button className="btn btn-primary" onClick={onHadlePrimaryBtn}>Botón</button>
+        <button className="btn" onClick={onHadlePrimaryBtn}>Reset</button>
         </>
     )
 }

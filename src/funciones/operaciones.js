@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const operaciones=(target,valorCont)=>{
-console.log(`operaciones.js ${valorCont} ${target.value}`);
+//console.log(`operaciones.js ${valorCont} ${target.value}`);
 
 switch (target.value) {
     case 'Suma' : 

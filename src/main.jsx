@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { Form0 } from './Form0'
+import {Form3App } from './Form3App'
 import './index.css'
 //import { FormWithCustomHook } from './myUseEffect/FormWithCustomHook';
-import { RepApp } from './myUseEffect/RepApp'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RepApp />
-  </React.StrictMode>,
+
+ReactDOM.createRoot(document.getElementById('root')).render(    
+    <Form3App/>
 )

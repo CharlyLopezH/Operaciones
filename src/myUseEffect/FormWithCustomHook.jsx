@@ -4,7 +4,7 @@ export const FormWithCustomHook=()=>{
 
     //Obtener (por desestructura) lo que devuelve el useForm
     //Se puede leer como traeme todo lo que ofrece la función-hook solicitada
-    const {onInputChange, onHandlerResetForm, username,email,password}=useForm({
+    const {onInputChange, onHandlerResetForm,username,email,password}=useForm({
             username:'',
             email:'',
             password:''
@@ -24,8 +24,7 @@ export const FormWithCustomHook=()=>{
             type="text"
             className="form-control"
             placeholder="Nombre usuario"
-            name="username"
-            value={username}
+            name="username"            
             onChange={onInputChange}        
         >
         </input>
