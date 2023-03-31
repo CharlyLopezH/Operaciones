@@ -8,7 +8,7 @@ export const Form3App=()=>{
     };
 
 
-    const[formState,onInputChange,setFormState]=useForm3Efect(initialForm);
+    const{formState, onInputChange,onHandleReset,usrNombre,email,password}=useForm3Efect(initialForm);
 
     // const onInputChange=({target})=>{
     //     const {name,value} = target;
@@ -42,7 +42,7 @@ export const Form3App=()=>{
          placeholder="Nombre..."         
          name="usrNombre"
          type="text"      
-         //value={formState.usrNombre}   
+         value={usrNombre}   
          onChange={onInputChange}
          >            
          </input>
@@ -52,7 +52,7 @@ export const Form3App=()=>{
          placeholder="Email..."
          type="email"         
          name="email"    
-         //value={formState.email}     
+         value={email}     
          onChange={onInputChange}
          >
          </input>
@@ -61,7 +61,7 @@ export const Form3App=()=>{
          placeholder="Contraseña"    
          name="password"
          type="password"
-         //value={formState.password}     
+         value={password}     
          onChange={onInputChange}
          >
 

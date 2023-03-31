@@ -10,13 +10,26 @@ export const useForm3Efect=(initialDataForm)=>{
 
     const onInputChange=({target})=>{
         const {name,value} = target;
-        //setFormState(usrNombre); //Esto actualiza sólo una varliable de estado; necesitamos todo el formState        
+        //setFormState(); //Esto actualiza sólo una varliable de estado; necesitamos todo el formState        
         //Solución para formularios complejos:
-         setFormState({
-             ...formState,
-             [name]: value
-           });
+          setFormState({
+              ...formState,
+              [name]: value
+            });
+        console.log('Aquí voy...')
     }
 
+    const onHandleReset=()=>{
+        console.log('Hola');
+        setFormState(initialDataForm);
+    }
+
+    return {
+        ...formState,
+        formState,
+        onInputChange,
+        onHandleReset
+
+    }
         
 }
