@@ -10,27 +10,6 @@ export const Form3App=()=>{
 
     const{formState, onInputChange,onHandleReset,usrNombre,email,password}=useForm3Efect(initialForm);
 
-    // const onInputChange=({target})=>{
-    //     const {name,value} = target;
-    //     //setFormState(usrNombre); //Esto actualiza sólo una varliable de estado; necesitamos todo el formState        
-    //     //Solución para formularios complejos:
-    //     setFormState({
-    //         ...formState,
-    //         [name]: value
-    //       });
-    // }
-    
-    // const onHandleReset=()=>{       
-    //     console.log('Resetear');
-    //     console.log(initialForm); 
-    //     setFormState(initialForm);                
-    // }
-
-    // const OnHandlerPrimaryBtn=(e)=>{
-    //     console.log(`Eventos del btn ${e}`)
-    //     console.log(`formState:${formState.usrNombre}, ${formState.email}, ${formState.password}`);
-    // }
-
     return(
         <>
         <div>
@@ -80,10 +59,6 @@ export const Form3App=()=>{
         
 
         <hr></hr>
-        {/* formState:
-        <h1>{formState.usrNombre}</h1>        
-        <h1>{formState.email}</h1>        
-        <h1>{formState.password}</h1>         */}
         </>
     )
 }
